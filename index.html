@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WATCH ICE HOCKEY 2025 LIVE </title>
+
+  <!-- Title -->
+  <title>WATCH ICE HOCKEY 2025 LIVE</title>
+
+  <!-- SEO meta tags -->
+  <meta name="description" content="Watch the 2025 Ice Hockey season live with Shahed's responsive landing page.">
+  <meta name="keywords" content="ice hockey 2025, live sports, responsive landing page, HTML CSS JS, Rajshahi">
+  <meta name="author" content="Shahed Afridi">
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="dba40dcd9ab89fff" />
+
+  <!-- Open Graph (social media preview) -->
+  <meta property="og:title" content="WATCH ICE HOCKEY 2025 LIVE">
+  <meta property="og:description" content="Watch the 2025 Ice Hockey season live with Shahed's responsive landing page.">
+  <meta property="og:url" content="https://shahedafridi009-oss.github.io/Shahed-web/">
+  <meta property="og:type" content="website">
+
+  <!-- Canonical link -->
+  <link rel="canonical" href="https://shahedafridi009-oss.github.io/Shahed-web/" />
+
+  <!-- CSS styles -->
   <style>
     /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -11,7 +33,7 @@
     body, html {
       height: 100%;
       font-family: Arial, sans-serif;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     /* Background video */
@@ -29,100 +51,94 @@
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+      color: white;
     }
 
-    /* Buttons */
+    .container h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px black;
+    }
+
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px 30px;
-      margin: 20px;
-      font-size: 20px;
-      font-weight: bold;
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 1rem;
+      color: white;
+      background: #007BFF;
       border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      animation: pulse 2s infinite;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
 
     .btn:hover {
-      transform: scale(1.1);
+      background: #0056b3;
     }
 
-    /* Watch Live Button */
-    .watch-btn {
-      background: #FF0000;
+    /* Contact form */
+    .contact {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .contact h2 {
       color: #fff;
+      margin-bottom: 15px;
     }
 
-    .watch-btn i {
-      margin-right: 10px;
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
     }
 
-    /* Sign Up Button */
-    .signup-btn {
-      background: #007BFF;
-      color: #fff;
+    .contact button {
+      width: 100%;
+      padding: 12px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
     }
 
-    /* Animation */
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    /* Loading animation */
-    .loading {
-      animation: blink 1s infinite;
-    }
-
-    @keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 0.5; }
-      100% { opacity: 1; }
+    .contact button:hover {
+      background: #1e7e34;
     }
   </style>
 </head>
 <body>
-
   <!-- Background video -->
   <video autoplay muted loop class="video-bg">
-    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    <source src="your-video.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
-  <!-- Center buttons -->
+  <!-- Centered content -->
   <div class="container">
-    <button class="btn watch-btn" onclick="watchNow()">
-      <i>▶</i> WATCH LIVE NOW
-    </button>
-    <button class="btn signup-btn" onclick="signUpNow()">
-      SIGN UP NOW
-    </button>
+    <h1>WATCH ICE HOCKEY 2025 LIVE</h1>
+    <a href="#tickets" class="btn">Get Tickets</a>
+    <a href="#schedule" class="btn">View Schedule</a>
+
+    <!-- Contact Form -->
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </div>
-
-  <script>
-    function watchNow() {
-      let btn = document.querySelector('.watch-btn');
-      btn.textContent = "Loading...";
-      btn.classList.add("loading");
-      setTimeout(() => {
-        window.location.href = "https://playfloowz.com/c?a=475&o=17";
-      }, 3000);
-    }
-
-    function signUpNow() {
-      let btn = document.querySelector('.signup-btn');
-      btn.textContent = "Loading...";
-      btn.classList.add("loading");
-      setTimeout(() => {
-        window.location.href = "https://playfloowz.com/c?a=475&o=17";
-      }, 3000);
-    }
-  </script>
-
 </body>
 </html>
